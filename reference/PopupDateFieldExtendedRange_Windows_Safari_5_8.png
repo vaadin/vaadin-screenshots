@@ -1,0 +1,115 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+
+<head>
+  <title>Log in to TeamCity -- TeamCity</title>
+  <!-- :linkCSS --><style type="text/css">
+  @import "/res/5519527726661553067.css?v=1321379680724";
+</style>
+  <script type="text/javascript">
+  var base_uri=window.location.protocol+"//"+window.location.host+"";
+</script>
+
+  <!-- :linkScript --><script type="text/javascript" src="/res/-8762791360234593415.js?v=1321379680724"></script>
+
+  <!-- :linkCSS --><style type="text/css">
+  @import "/res/-7047022519376031888.css?v=1321379680724";
+</style>
+    <!-- :linkScript --><script type="text/javascript" src="/res/-4045289697674020822.js?v=1321379680724"></script>
+    <script type="text/javascript" xml:space="preserve">
+      Behaviour.addLoadEvent(function() {
+        $("username").focus();
+
+        if (getCookie("__test") != "1") {
+          BS.Util.show($("noCookiesEnabledMessage"));
+        }
+
+        if ($('fading')) {
+          BS.Highlight($('fading'));
+        }
+      });
+    </script>
+
+  
+<link rel="Shortcut Icon" href="/favicon20.ico" type="image/x-icon"/>
+
+<meta name="application-name" content="TeamCity (Log in to TeamCity -- TeamCity)"/>
+<meta name="description" content="Powerful Continuous Integration and Build Server"/>
+<link rel="icon" href="/img/icons/TeamCity512.png" sizes="512x512"/>
+<link rel="icon" href="/img/icons/TeamCity128.png" sizes="128x128"/>
+<link rel="icon" href="/img/icons/TeamCity48.png" sizes="48x48"/>
+<link rel="icon" href="/img/icons/TeamCity32.png" sizes="32x32"/>
+
+<link rel="icon" href="/img/icons/TeamCity16.png" sizes="16x16"/>
+
+</head>
+
+<body>
+
+<div id="noJavaScriptEnabledMessage" class="noJavaScriptEnabledMessage">
+      Please enable JavaScript in your browser to proceed with login.
+    </div>
+    <script type="text/javascript" xml:space="preserve">
+      BS.Util.hide($("noJavaScriptEnabledMessage"));
+    </script>
+
+    <div id="noCookiesEnabledMessage" class="noCookiesEnabledMessage" style="display: none;">
+      Please enable cookies in your browser to proceed with login.
+    </div>
+    <span id="testCookie"></span>
+
+    <div id="loginPage">
+      <span class="logo"><img src="/img/logoLogin.gif" alt="TeamCity" width="61" height="102"/></span>
+      <div id="pageContent">
+
+      <h1 id="header">Log in to TeamCity</h1>
+      <span class="versionTag"><span class="vWord">Version</span> 6.5.5 (build 18087)</span>
+  
+
+      <div id="errorMessage"></div>
+        
+      
+
+      <form action="/loginSubmit.html" onsubmit="return BS.LoginForm.submitLogin();" method="post">
+        <table class="loginCredentials">
+          <tr>
+            <th><label for="username">Username:</label></th>
+            <td><input class="text" id="username" type="text" name="username"></td>
+          </tr>
+          <tr>
+            <th><label for="password">Password:</label></th>
+            <td><input class="text" id="password" type="password" name="password"></td>
+          </tr>
+          <tr>
+            <th>&nbsp;</th>
+            <td><input style="vertical-align:middle;" class="checkbox" id="remember" type="checkbox" name="remember" checked="checked" value="true"> <label style="vertical-align:bottom;" class="rememberMe" for="remember">Remember me</label></td>
+          </tr>
+          <tr>
+            <th><img id="saving" style="display: none; padding-top: 0.1em; float: right;" src="/img/ajax-loader.gif" width="16" height="16" alt="Please wait..." title="Please wait..."/></th>
+            <td><input class="but" type="submit" name="submitLogin" value="Login"></td>
+          </tr>
+        </table>
+
+        <input type="hidden" id="publicKey" name="publicKey" value="008e571e2796f3f9ba6896142d40b23b334ab2a0b84b199926c5d0492c14fa2ac587f234da66b01f5f72a7ce712acac1d9e6f1fea1c24d33aba129d78713829a51eedae0bd1e12bc23a73edc4deba09fd21bb6a566340899025bcf3cb8e9d76a58d366bff1f06ce18edac5c316b9e164deaef910305dd2425d08f81cb0b21751c1"/>
+      </form>
+
+      
+      <p class="registerUser"><span class="versionTag">
+        <a href="/registerUser.html?init=1">Register a New User Account</a>
+        
+        </span>
+      </p>
+      
+
+      
+   </div>
+ </div>
+
+</body>
+</html>
