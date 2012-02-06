@@ -7,16 +7,16 @@ then
 	exit
 fi
 
-clean=`svn status`
-if [ ! -z "$clean" ] 
+git status|grep  "nothing to commit (working directory clean)" > /dev/null
+if [ "$?" != "0" ] 
 then
-	svn status
+	git status
 	echo "You need to have a clean working directory when running this script"
 	exit
 fi
 
 echo "Ensuring we are up-to-date so we won't miss any screenshots"
-svn update
+git pull
 
 browser=$1
 fromversion=$2
@@ -32,8 +32,8 @@ read
 for file in *_"$from"_*.png
 do
 	tofile=`echo $file|sed "s/$from/$to/"`
-	svn rename "$file" "$tofile"
+	git mv "$file" "$tofile"
 done
 
 echo "Done. If every thing looks ok, run"
-echo "svn commit -m \"Renamed screenshots for $browser $fromversion to $browser $toversion\""
+echo "git commit -m \"Renamed screenshots for $browser $fromversion to $browser $toversion\""
