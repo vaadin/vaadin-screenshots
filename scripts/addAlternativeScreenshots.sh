@@ -22,5 +22,5 @@ do
                 target="$refdir/"`echo $file|sed "s/.png/_$alt.png/g"`
         done
         
-        cp "$file" "$target"
+        cp "$filepath" "$target"
 done
