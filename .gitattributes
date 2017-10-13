@@ -1,0 +1,9 @@
+# The default behavior
+* text=auto
+
+*.sh text
+
+*.png binary
+
+.gitattributes text
+.gitignore text
